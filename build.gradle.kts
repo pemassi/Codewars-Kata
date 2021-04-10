@@ -2,7 +2,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     java
-    kotlin("jvm") version "1.4.32"
+    kotlin("jvm") version "1.3.70"
 }
 
 group = "me.ruddb"
@@ -15,6 +15,7 @@ repositories {
 dependencies {
     implementation("junit:junit:4.13.1")
     testImplementation(kotlin("test-junit"))
+    implementation(kotlin("stdlib-jdk8"))
 }
 
 tasks.test {

@@ -1,12 +1,13 @@
+package kata.seven
+
 /**
- * Codewars
+ * Codewars - Vowel Count
  *
- * https://www.codewars.com/kata/54ff3102c1bad923760001f3/train/kotlin
+ * https://www.codewars.com/kata/54ff3102c1bad923760001f3
  *
  * @author pemassi(ruddbs5302@gmail.com)
+ * @since 2021.04.10
  */
-package solution
-
 fun getCount(str : String) : Int {
     return str.replace("[^aeiou]".toRegex(), "").length
 }
